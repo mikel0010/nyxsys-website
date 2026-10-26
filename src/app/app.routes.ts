@@ -90,6 +90,11 @@ export const routes: Routes = [
                 title: 'Audience Measurement Enabled by Calton Datx • NYXSYS Philippines, Inc.',
                 loadComponent: () => import('./pages/audience-measurement/audience-measurement.component').then(m => m.AudienceMeasurementComponent)
             },
+            {
+                path: 'extended-media-network',
+                title: 'Extended Media Network • NYXSYS Philippines, Inc.',
+                loadComponent: () => import('./pages/extended-media-network/extended-media-network.component').then(m => m.ExtendedMediaNetworkComponent)
+            }
         ]
     },
     {

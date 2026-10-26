@@ -1,0 +1,140 @@
+<app-navbar />
+
+<section class="section-container network-section">
+    <video [autoplay]="true" [muted]="true" [loop]="true" [playsInline]="true" class="network-video" preload="auto">
+        <source src="https://nyxsys.ph/assets/webp-images/extended media network/HERO BANNER VID.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="network-container">
+        <div class="network-wrapper">
+            <h1 class="network-header">Extended Media Network</h1>
+            <p class="network-subheader">
+                Discover more premium LED billboard advertising opportunities through our trusted media partners,
+                including Q-Creativs, DPWH, and PrimeSpots.
+            </p>
+            <p class="network-subheader">
+                Expand Your Reach Beyond Our Network — Coming Soon!
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-container led-services">
+    <div class="led-container">
+        <div class="led-wrapper text-center">
+            <div class="gradient-bg-top-right"></div>
+            <div class="container">
+                <h2 class="mb-4 fw-bold">Why Choose Our Extended Media Network?</h2>
+                <p class="led-subheader led-item">
+                    Access more advertising opportunities through Nyxsys and our trusted media partners. Expand your
+                    campaign's reach with additional LED billboard locations suited to your brand's goals.
+                </p>
+                <div class="row justify-content-center my-5 g-3 g-md-4">
+                    @for (item of whyChooseEMN; track $index) {
+                        <div class="col-12 col-md-6 col-lg-6">
+                            <div class="p-4 border rounded-4 shadow-sm h-100 text-center">
+                                <span class="material-icons fs-1 mb-4" style="color: #F58F20;">{{ item.icon }}</span>
+                                <h5 class="fw-semibold">{{ item.title }}</h5>
+                                <p class="text-muted small mt-3">{{ item.text }}</p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            
+                <div class="mt-5 d-flex flex-column flex-sm-row justify-content-center align-items-center">
+                    <!-- <p class="p-0 m-0">Boost Your Brand Visibility &mdash;</p> -->
+                    <a class="mx-2" href="/contact" color="accent" mat-raised-button>Get Started Today!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-container led-services">
+    <div class="led-container">
+        <div class="led-wrapper">
+            <h2 class="fw-semibold">Explore Upcoming LED Sites</h2>
+            <p class="text-muted">— Q-Creativs</p>
+            <div class="row g-3 mt-2 justify-content-center">
+                @for (item of ledQCreatvs; track $index) {
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="led-content led-content-hover">
+                            <img [src]="item.image" [alt]="item.alt" loading="lazy">
+                            <div class="led-content-overlay d-flex flex-column h-100">
+                                <div class="led-content-text">
+                                    <h6 class="fs-6 fw-semibold">{{ item.text }}</h6>
+                                </div>
+                                <mat-divider></mat-divider>
+                                <p class="fw-semibold mt-3 mx-1" style="color: #F58F20;">Advertise Here</p>
+                                <p>{{ item.why }}</p>
+                                <!-- <div class="mt-auto d-flex gap-1">
+                                    <a color="accent" routerLink="/contact" routerLinkActive="router-link-active"  mat-raised-button>Book this Spot</a>
+                                    <a color="secondary" [routerLink]="item.link" routerLinkActive="router-link-active"  mat-raised-button>Learn More</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <hr class="my-5">
+        <div class="led-wrapper">
+            <p class="text-muted">— PrimeSpots</p>
+            <div class="row g-3 mt-2">
+                @for (item of ledPrimeSpots; track $index) {
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="led-content led-content-hover">
+                            <img [src]="item.image" [alt]="item.alt" loading="lazy">
+                            <div class="led-content-overlay d-flex flex-column h-100">
+                                <div class="led-content-text">
+                                    <h6 class="fs-6 fw-semibold">{{ item.text }}</h6>
+                                </div>
+                                <mat-divider></mat-divider>
+                                <p class="fw-semibold mt-3 mx-1" style="color: #F58F20;">Advertise Here</p>
+                                <p>{{ item.why }}</p>
+                                <!-- <div class="mt-auto d-flex gap-1">
+                                    <a color="accent" routerLink="/contact" routerLinkActive="router-link-active"  mat-raised-button>Book this Spot</a>
+                                    <a color="secondary" [routerLink]="item.link" routerLinkActive="router-link-active"  mat-raised-button>Learn More</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <hr class="my-5">
+        <div class="led-wrapper">
+            <h2 class="fw-semibold">Explore Upcoming Static Sites</h2>
+            <p class="text-muted">— DPWH</p>
+            <div class="row g-3 mt-2 justify-content-center">
+                @for (item of staticPillars; track $index) {
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <div class="led-content led-content-hover">
+                            <img [src]="item.image" [alt]="item.alt" loading="lazy">
+                            <div class="led-content-overlay d-flex flex-column h-100">
+                                <div class="led-content-text">
+                                    <h6 class="fs-6 fw-semibold">{{ item.text }}</h6>
+                                </div>
+                                <mat-divider></mat-divider>
+                                <p class="fw-semibold mt-3 mx-1" style="color: #F58F20;">Advertise Here</p>
+                                <p>{{ item.why }}</p>
+                                <!-- <div class="mt-auto d-flex gap-1">
+                                    <a color="accent" routerLink="/contact" routerLinkActive="router-link-active"  mat-raised-button>Book this Spot</a>
+                                    <a color="secondary" [routerLink]="item.link" routerLinkActive="router-link-active"  mat-raised-button>Learn More</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-see-more-services-section />
+
+<app-contact-us-section [services]="'EXTENDED MEDIA NETWORK PAGE'" />
+
+<app-footer />

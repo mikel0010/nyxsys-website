@@ -59,6 +59,15 @@ export class UtilityService {
       routerLink: '/services/audience-measurement',
       buttonText: 'Discover How We Measure Advertising Impact',
       alt: 'People exiting a building with audience measurement overlays.'
+    },
+    {
+      id: 4,
+      title: 'EXTENDED MEDIA NETWORK',
+      description: `Extend your reach to a global audience with our premium media network.`,
+      image: 'https://nyxsys.ph/assets/webp-images/audience measurement/indoor/indoor mall audience measurement 1.webp',
+      routerLink: '/services/extended-media-network',
+      buttonText: 'Learn More About Our Media Network',
+      alt: 'People exiting a building with audience measurement overlays.'
     }
   ]
 
@@ -91,6 +100,83 @@ export class UtilityService {
       link: '/services/led-media-inventories/c5-market-market-led'
     },
   ];
+
+  ledQCreatvs: any[] = [
+    {
+      text: 'LED Billboard — Beside Philippine Red Cross Mandaluyong',
+      image: 'https://nyxsys.ph/assets/webp-images/extended media network/led billboard 1.webp',
+      alt: '',
+      why: `Reach passing motorists and commuters with a
+            prominent LED billboard placement along a busy
+            Mandaluyong road. An opportunity to increase
+            brand visibility and deliver impactful digital
+            creatives to audiences on the move.`,
+    },
+    {
+      text: 'LED Billboard — Beside SIAM Broadcasting Network',
+      image: 'https://nyxsys.ph/assets/webp-images/extended media network/led billboard 2.webp',
+      alt: '',
+      why: `Make your brand stand out with a large-format
+            LED billboard in a busy urban setting. Showcase
+            your campaign through dynamic digital
+            advertising in a prominent city location.`,
+    }
+  ];
+
+  ledPrimeSpots: any[] = [
+    {
+      text: 'LED Billboard — SM Megamall',
+      image: 'https://nyxsys.ph/assets/webp-images/extended media network/led billboard 3.webp',
+      alt: '',
+      why: `Capture the attention of shoppers, commuters,
+            and professionals with a prominent LED billboard
+            placement near SM Megamall. Maximize brand
+            visibility in one of Metro Manila’s busiest
+            commercial destinations through vibrant digital
+            creatives that make your brand stand out.`
+    }
+  ];
+
+  staticPillars: any[] = [
+    {
+      text: 'Pillars — EDSA Buendia',
+      image: 'https://nyxsys.ph/assets/webp-images/extended media network/pillars 1.webp',
+      alt: '',
+      why: `Put your brand in the spotlight along the busy EDSA
+            Buendia corridor, a key route for daily commuters
+            and motorists. Take advantage of high-traffic
+            exposure to strengthen brand awareness and
+            connect with audiences on the move.`
+    },
+    {
+      text: 'Pillars — EDSA Ortigas',
+      image: 'https://nyxsys.ph/assets/webp-images/extended media network/pillars 2.webp',
+      alt: '',
+      why: `Reach a diverse audience of professionals,
+            commuters, and motorists along the bustling EDSA
+            Ortigas corridor. Position your brand in a strategic
+            urban location designed to increase visibility and
+            create lasting impressions among daily travelers.`
+    },
+    {
+      text: 'Pillars — EDSA AYALA',
+      image: 'https://nyxsys.ph/assets/webp-images/extended media network/pillars 3.webp',
+      alt: '',
+      why: `Boost your brand visibility along the busy EDSA
+            Ayala corridor. Reach professionals, commuters,
+            and motorists in the heart of Makati’s business
+            district`
+    },
+    {
+      text: 'Pillars — EDSA PASAY',
+      image: 'https://nyxsys.ph/assets/webp-images/extended media network/pillars 4.webp',
+      alt: '',
+      why: `Expand your brand’s reach along the busy EDSA
+            Pasay corridor. Boost brand visibility and connect
+            with daily commuters and motorists through a
+            strategic advertising placement.`
+    }
+  ]
 
 
   staticInvetories: any[] = [
