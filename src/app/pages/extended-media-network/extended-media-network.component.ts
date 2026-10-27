@@ -12,6 +12,7 @@ import { UtilityService } from '../../services/utility.service';
   styleUrl: './extended-media-network.component.scss'
 })
 export class ExtendedMediaNetworkComponent {
+  isVideoLoading: boolean = true;
   ledQCreatvs: any[] = [];
   ledPrimeSpots: any[] = [];
   staticPillars: any[] = [];
@@ -48,5 +49,9 @@ export class ExtendedMediaNetworkComponent {
         utils.setCanonicalURL()
       }
     })
+  }
+
+  onVideoLoaded(){
+    this.isVideoLoading = false;
   }
 }
