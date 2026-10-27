@@ -50,12 +50,12 @@ export class HomeComponent {
   }
 
   ngAfterViewInit() { 
-    const video = this.videoElementRef.nativeElement;
-    video.addEventListener('loadeddata', () => {
-      console.log('Video loaded once');
-      this.isVideoLoading = false;
+    // const video = this.videoElementRef.nativeElement;
+    // video.addEventListener('loadeddata', () => {
+    //   console.log('Video loaded once');
+    //   this.isVideoLoading = false;
       
-    }, { once: true }); // Ensures it's only triggered once
+    // }, { once: true }); // Ensures it's only triggered once
   }
 
   onClickScrollSection() {
